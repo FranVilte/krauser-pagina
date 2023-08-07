@@ -1,0 +1,109 @@
+.main__titulo{    
+    text-align: center;
+    margin-bottom: 5rem;
+    background: linear-gradient(90deg, rgba(2,0,36,0) 25%, rgba(206,24,30,0.7988445378151261) 50%, rgba(0,0,0,0) 75%);
+}
+.main__linea{
+    display: none;
+}
+
+#actividad{
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center;
+}
+
+.actividad__ficha{    
+    margin: auto 3rem;
+    width: 40%;
+}
+
+#promo{
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center;    
+    max-width: 800px;
+    margin: 3rem auto;    
+}
+
+.promo__ficha{    
+    margin: 3rem;
+    width: 40%;
+    height: 32vh;
+}
+
+#contacto{
+    display: flex;
+    justify-content: space-around;    
+    height: 3vh;
+}
+
+.icono{
+    justify-content: center;
+}
+
+#ubicacion{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuImagen, .menuMobile {
+    display: none;
+}
+
+.menuDesktop{
+    display: block;
+    height: 10vh;
+}
+
+.menuDesktop ul{
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-end;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.menuDesktop ul a{
+    border: 0;
+    background-color: transparent;    
+    font-size: 15px;    
+    margin-right: 2rem;
+}
+
+/* .respmenu input[type="checkbox"]{
+    display: none;
+}
+
+.respmenu .fa-bars {
+    display: none;
+}
+
+.respmenu .fa-times {
+    display: none;
+}
+
+.respmenu nav{
+    display: block;
+    height: 10vh;
+}
+
+.respmenu nav ul{
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-end;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.respmenu nav ul a{
+    border: 0;
+    background-color: transparent;    
+    font-size: 15px;    
+    margin-right: 2rem;
+} */

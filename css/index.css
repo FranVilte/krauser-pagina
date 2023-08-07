@@ -1,0 +1,351 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%
+}
+
+body, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;    
+}
+
+/* variables */
+:root{
+    --primary: #181818;
+    --secondary: #FFFFFF;
+    --tertiary: #CE181E;    
+}
+
+/* base styles */
+body{
+    background-color: var(--primary);
+    color: var(--secondary);
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Roboto', sans-serif;        
+}
+
+h1{ font-size: 3.5rem;}
+h2{ font-size: 2.7rem;}
+h3{ font-size: 2rem;}
+p{ font-size: 1.8rem;}
+li{ font-size: 1.25rem;}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), 
+    rgba(0,0,0,0.2)), url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .respmenu {        
+    position: relative;    
+    height: 10vh;    
+}
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;    
+    right: 0;
+    top: 0;            
+}
+
+.respmenu .fa-bars, .respmenu .fa-times {
+    padding: 2rem;
+}
+
+.respmenu input[type="checkbox"]{     
+    margin: 2rem;    
+}
+
+.respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 3rem;
+    pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.respmenu a {
+    color: var(--secondary);    
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--tertiary);
+    max-width: 200px;
+    background: #680707;        
+    box-sizing: content-box;
+}
+
+.respmenu nav {
+    display: none;        
+}
+
+.respmenu input:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.respmenu nav ul{
+    width: 35vw;
+    margin-top: 5rem;
+    margin-right: 3rem;
+    list-style: none;
+    text-align: center;    
+}
+
+.respmenu nav ul li{
+    font-weight: bold;
+}
+
+.respmenu input:checked ~ .fa-bars {
+    display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+} */
+
+nav {        
+    position: relative;    
+    height: 10vh;    
+}
+
+.menuImagen {
+    position: absolute;
+    box-sizing: border-box;    
+    right: 2rem;
+    top: 2rem;            
+}
+
+/* .fa-bars, .fa-times {
+    padding: 2rem;
+} */
+
+.fa-bars, .fa-times {
+    font-size: 3rem;
+    pointer-events: none;
+}
+
+.menuMobile {
+    position: absolute;
+    box-sizing: border-box;    
+    right: 5rem;
+    top: 2rem;                
+}
+
+nav a {
+    color: var(--secondary);    
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--tertiary);
+    max-width: 200px;
+    background: #680707;        
+    box-sizing: content-box;
+}
+
+nav ul{
+    width: 35vw;    
+    list-style: none;
+    text-align: center;    
+}
+
+nav ul li{
+    font-weight: bold;
+}
+
+.inactivo, .menuDesktop {
+    display: none;        
+}
+
+/* nav{
+    height: 10vh;
+    display: flex;
+    justify-content: end;    
+}
+
+.nav__icono{
+    font-size: 3rem;
+    padding: 20px;
+} */
+
+.nav__hero{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main__titulo{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.main__linea{
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    width: 5rem;
+    height: 0px;
+    border: 0.5rem solid var(--tertiary)
+}
+
+#actividad, #promo, #ubicacion, #contacto, footer{
+    margin: 3rem 2.5rem;
+}
+
+.actividad__ficha{        
+    position: relative;
+    height: 55vh;
+    max-width: 500px;
+}
+
+.actividad__titulo{
+    position: absolute;
+    background-color: #680707;
+    width: 150px;
+    height: 40px;    
+    left: calc(50% - 75px);
+    top: -20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #F5F5F5;
+}
+
+.actividad__imagen{    
+    min-width: 250px;
+    min-height: 300px;    
+    background-size: cover;
+    background-position: center;
+}
+
+.actividad__descripcion{    
+    line-height: 2rem;    
+    padding-top: 10px;    
+    font-weight: 300;
+}
+
+.actividad__imagen-cross{
+    background-image: url(../img/crosstraining.jpg);
+}
+
+.actividad__imagen-gap{
+    background-image: url(../img/gap.jpg);
+}
+
+.actividad__imagen-oly{
+    background-image: url(../img/oly.jpg);
+}
+
+.actividad__imagen-funcional{
+    background-image: url(../img/funcional.jpg);
+}
+
+.actividad__imagen-gymnastic{
+    background-image: url(../img/gimnasia.jpg);
+}
+
+.promo__ficha{        
+    position: relative;
+    height: 30vh;    
+    text-align: center;
+    background-color: #303030b1;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    margin-bottom: 2rem;
+    max-width: 380px;
+    max-height: 300px;
+}
+
+.promo__titulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.promo__imagen{
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    min-height: 100px;    
+    background-size: cover;        
+    background-position: center;   
+    margin: 2rem auto;     
+    background-image: url(../img/promo.svg);
+}
+
+.promo__descripcion{    
+    line-height: 2rem;    
+    padding: 1rem;    
+    font-weight: 300;
+}
+
+.promo__descripcion span{
+    font-weight: bold;
+}
+
+.icono{
+    display: flex;
+    height: 3vh;   
+    margin-bottom: 1rem;
+}
+
+.icono__img{  
+    font-size: 2rem;
+    text-align: center;
+}
+
+.icono__texto{
+    margin-left: 1.2rem;
+}
+
+#ubicacion{
+    position: relative;
+    height: 40vh;   
+}
+
+.ubicacion__cabecera{         
+    display: flex;
+    height: 6vh;   
+    margin-bottom: 1rem;
+}
+
+.ubicacion__maps{
+    height: 34vh;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;        
+}
+
+.ubicacion__iframe{
+    height: 100%;
+    width: 100%;
+}
+
+#contacto{
+    position: relative;
+    height: 10vh;   
+}
+
+.linea__final{
+    margin: 4rem auto;
+    width: 80vw;
+    height: 0px;
+    border: 0.2rem solid var(--secondary);
+}
+
+.footer__redes{
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
