@@ -115,7 +115,7 @@ header{
 
 nav {        
     position: relative;    
-    height: 10vh;    
+    height: 10vh;        
 }
 
 .menuImagen {
@@ -136,9 +136,8 @@ nav {
 
 .menuMobile {
     position: absolute;
-    box-sizing: border-box;    
-    right: 5rem;
-    top: 2rem;                
+    box-sizing: border-box;        
+    top: 5rem;             
 }
 
 nav a {
@@ -146,13 +145,13 @@ nav a {
     display: block;
     padding: 1rem 2rem;
     border-bottom: 2px solid var(--tertiary);
-    max-width: 200px;
+    /* max-width: 200px; */
     background: #680707;        
     box-sizing: content-box;
 }
 
 nav ul{
-    width: 35vw;    
+    width: 100vw;    
     list-style: none;
     text-align: center;    
 }
@@ -203,7 +202,7 @@ nav ul li{
 
 .actividad__ficha{        
     position: relative;
-    height: 55vh;
+    height: 65vh;
     max-width: 500px;
 }
 
@@ -257,7 +256,7 @@ nav ul li{
 
 .promo__ficha{        
     position: relative;
-    height: 30vh;    
+    height: 35vh;    
     text-align: center;
     background-color: #303030b1;
     border-radius: 2rem;
