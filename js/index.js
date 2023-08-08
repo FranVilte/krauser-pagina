@@ -16,7 +16,5 @@ function toggleMenuMobile(){
         menu.style.background = 'transparent'        
         menuHambur.classList.remove('fa-times')
         menuHambur.classList.add('fa-bars')
-    }
-
-    console.log(menuHambur) 
+    }    
 }
